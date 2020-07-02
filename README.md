@@ -1,6 +1,14 @@
 # CA357-HumanComputerInteraction_Group21 Year 3 2018/2019
 CA357 Project: A potential new look for Bank of Ireland's website
 
+**Year 3: 2018/2019**
+
+**Members:**<br />
+-Pedro Canes<br />
+-Santiago de Arribas de Renedo<br />
+-Vilandas Sukutis<br />
+-Stephen Stephanov
+
 **Assignment spec:**
 
 The growth of truly interactive systems has brought many challenges to those engaged in the design of good user interfaces and user experience. The problem of satisfying users needs and requirements is exacerbated by the fact that the system is now accessed on a multitude of different devices and from a variety of locations or contexts. Your job in this assignment is to choose from alternative applications and design a prototype user interface, and then evaluate how effectively your design has worked..
