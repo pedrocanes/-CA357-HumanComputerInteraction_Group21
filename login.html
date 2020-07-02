@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Login page</title>
+<meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/hero-slider.css">
+        <link rel="stylesheet" href="css/owl-carousel.css">
+        <link rel="stylesheet" href="css/datepicker.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+<style>
+    html { 
+        background-color:white no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    input,
+	input::-webkit-input-placeholder {
+    font-size: 25px;
+    color:rgba(0,0,0,.2);
+    line-height: 2;
+	}
+
+	input[type=text] {
+	    padding:5px; 
+	    border:2px solid black; 
+	    -webkit-border-radius: 5px;
+	    border-radius: 5px;
+	}
+
+	input[type=text]:focus {
+	    border-color:#333;
+	}
+	p{font-weight: 400;font-size:225%;color:#333333;}
+	body{
+		text-align: center;
+	}
+
+	.visuallyhidden
+	{
+		color:#00000000;
+	}
+
+	#homeButton
+	{
+		float:left;
+		font-size:170%;
+		font-family:Garamond;
+		border:1.5px solid black;
+
+
+	}
+
+	#spacer
+	{
+		height:30%;
+		width: 5px;
+	}
+
+	#pac_input_box
+	{
+		margin:auto;
+		height:15%;
+		width:15vw;
+		/*background-color:blue;*/
+	}
+	#pac_code
+	{
+		height:40%;
+		width:33.334%;
+		float:left;
+		/*display:inline-block:*/
+
+	}
+
+	#content
+	{
+		margin:0 auto;
+		border-radius: 25px;
+		background-color:#D3D3D3D3;
+		height:60vh;
+		width:50%;
+	}
+	#pac{display:inline-block;}
+	#PAC1{
+		background-color:green
+		float:left;
+		display:inline-block;
+		width:40px;
+	}
+	#PAC2{
+		background-color:green
+		float:left;
+		display:inline-block;
+		width:40px;
+	}
+	#PAC3{
+		background-color:green
+		float:left;
+		display:inline-block;
+		width:40px;
+	}
+
+</style>
+
+<script>
+
+function goHomepage()
+{
+	window.location.href = "index.html"
+}
+
+function validate_creds()
+{
+	let onlineReg = document.getElementById("regis").value
+	let pac1 = document.getElementById("PAC1").value,
+		pac2 = document.getElementById("PAC2").value,
+		pac3 = document.getElementById("PAC3").value
+
+	if(true)//onlineReg == "12345678" && pac1 + pac2 + pac3 == "000"
+	{
+	window.location.href = "dashboard.html";
+	}
+	
+	else
+	{
+		alert("Invalid credentials")
+	}
+
+}
+</script>
+</head>
+
+<body>
+
+<div class="wrap">
+        <header id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button id="primary-nav-button" type="button">Menu</button>
+                        <div class="logo">
+							<a href="index.html">
+                            <img src="img/logo.png" alt="Logo">
+							</a>
+                        </div>
+                        <nav id="primary-nav" class="dropdown cf">
+                            <ul class="dropdown menu">
+                                <li class='active'><a id = "buttons" href="index.html">Home</a></li>
+								<li class='active' id="primary-nav-logOut"><a id="log-out" href="login.html">LOG-IN</a></li>
+                            </ul>
+                        </nav><!-- / #primary-nav -->
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+	
+	<section>
+	<div id="spacer"></div>
+	<div id="content">
+	<div style="padding:2em 0 5em 0">
+		<p class="dashboard-title">ID Number</p>
+		<input id="regis" type="text" maxlength="8" placeholder="">
+	</div>
+	<div style="padding:1em 0 2em 0">
+		<p class="dashboard-title">Personal Access Code</p>
+		<div id="pac">
+			</div>
+		<div id="pac_input_box">
+			<div id="pac_code"> <input id="PAC1" type="text" maxlength="1" placeholder="1st" name="Online Registration" value=""> </div>
+			<div id="pac_code"> <input id="PAC2" type="text" maxlength="1" placeholder="2nd" name="Online Registration" value=""> </div>
+			<div id="pac_code"> <input id="PAC3" type="text" maxlength="1" placeholder="3rd" name="Online Registration" value=""> </div>
+		</div>
+	</div>
+	<br><br><br><br>
+	<div>
+		<button id="myButton" style="height:3em;width:5em" value ="" onclick="validate_creds()">Log-In</button>
+	</div>
+		</div>
+	</section>
+	
+	
+</body>
+</html>

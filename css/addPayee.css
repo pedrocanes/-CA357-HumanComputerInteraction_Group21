@@ -1,0 +1,149 @@
+#content2{
+	text-align: center;
+	background-color: white;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	font-family: sans-serif;
+	border-radius: 10px;
+	box-shadow: 0 0 5px rgba(0,0,0,.5);
+}
+
+#help{
+	background-color: rgba(255,255,255,.8);
+	border-radius: 10px;
+	display: none;
+}
+
+.velo ul{
+	padding: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 0;
+	margin-top: 10px;
+}
+
+.velo li{
+	padding: 0;
+	margin: 0;
+	margin-top: 0;
+}
+
+#topContent{
+	background-color: rgba(0,0,0,.1);
+	margin: 0;
+	padding: 20px;
+	text-align: justify;
+	overflow: hidden;
+}
+
+#middleContent{
+	background-color: rgba(0,0,0,.2);
+	margin: 0;
+	padding: 20px;
+	padding-top: 5px;
+}
+
+#bottomContent{
+	background-color: rgba(0,0,0,.3);
+	margin: 0;
+	padding: 0;
+}
+
+input[type=text]{
+	width: 50%;
+	height: 30px;
+	border-radius: 10px;
+	outline: none;
+	font-size: 15px;
+	text-align: center;
+	border: none;
+	margin: 5px;
+}
+
+input[type=text]:focus{
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,.3);
+}
+
+#help{
+		overflow:hidden;
+}
+
+#help h3{
+	padding: 10px;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+#help h3{
+	background-color: rgb(85, 195, 232);
+	padding-bottom: 10px;
+	color: white;
+}
+
+#helpButton{
+	font-size: 20px;
+	color: white;
+	background-color: rgb(85, 195, 232);
+	border-radius: 3px;
+	border: none;
+	outline: 0;
+	float: right;
+	padding: 5px;
+}
+
+#helpButton:hover{
+	background-color: rgb(52, 106, 150);
+}
+
+#helpButton:active{
+	background-color: white;
+	color: black;
+}
+
+#addButton{
+	outline: none;
+	font-size: 25px;
+	width: 50%;
+	margin: 5px;
+	padding: 5px;
+	border-radius: 10px;
+	background-color: rgb(85, 195, 232);
+	color: white;
+	border: none;
+}
+
+#addButton:hover{
+	background-color: rgb(52, 106, 150);
+}
+
+#addButton:active{
+	background-color: white;
+	color: black;
+
+}
+
+.velo h1,h2,h3,h4{
+	margin: 0;
+	padding: 0;
+}
+
+.velo p {
+	color:black;
+    margin: 0;
+	padding: 0;
+}
+
+#topContent h1{
+	background-color: rgb(85, 195, 232);
+	padding: 5px;
+	padding-left: 15px;
+	color: white;
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
+
+#bottomContent{
+	display: none;
+}

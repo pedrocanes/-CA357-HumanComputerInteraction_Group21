@@ -1,0 +1,283 @@
+@import 
+   url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+
+* {
+   box-sizing: border-box; 
+   transition: all ease-in-out 250ms;
+   }
+
+/* Border Box - If you use padding, width will include padding etc */
+
+body {
+   margin: 0;
+   font-family: "Raleway", sans-serif;
+   text-align: center;
+}
+
+img {
+   max-width: 35%;
+   height: auto;
+   align-self: center;
+}
+
+/*
+.container {
+   width: 100%;
+   margin: 10em auto;
+   height: 100%;
+}
+
+
+.clearfix::after,
+.section::after {
+   content: '';
+   display: block;
+   clear: both;
+}
+
+*/
+
+/* Columns */
+
+.col-1 {
+   width: 100%;
+}
+
+/* Typography */
+
+.title {
+   font-size: 2.5rem;
+}
+
+.title span {
+   font-weight: 300;
+   display: block;
+   font-size: .8em;
+}
+
+.unstyled-list {
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+}
+
+@media (min-width:55rem) {
+   .title {
+      font-size: 3rem;
+      padding: 0em;
+   }
+}
+
+/* Buttons */
+
+.button {
+   display: inline-block;
+   font-size: 1.15em;
+   text-decoration: none;
+   text-transform: uppercase;
+   border-width: 2px;
+   border-style: solid;
+   padding: 1em 1.75em; /*First val Top and Bottom, Second val Left and Right*/
+   background: rgba(0,0,0,.9);
+}
+
+@media (min-width: 55rem){
+   .button {
+      font-size: 1.5rem;
+   }
+}
+
+.button-small {
+   font-size: 1rem;
+   font-weight: 700;
+}
+
+.button-accent {
+   color: white;
+   border-color: grey;
+}
+
+.button-accent:hover,
+.button-accent:focus {
+   background: #337ab7;
+   color: white;
+}
+
+
+/* Header */
+
+header {
+   position: absolute;
+   width: 100%;
+   margin: 1em;
+}
+
+nav ul {
+   list-style: none;
+}
+
+nav li {
+   margin: 0em;
+   padding-right: 2em;
+   display: contents;
+}
+
+nav a {
+   font-weight: 900;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-size: 1.1rem;
+   padding: .5em;
+   color: antiquewhite;
+   border-width: 3px;
+   border-style: solid;
+   border-color: black;
+}
+
+nav a:hover,
+nav a:focus {
+   background: #337ab7;
+   color: white;
+}
+
+.logo {
+   max-width: 5em;
+   padding: 0em;
+}
+
+@media (min-width:55rem) {
+   .logo {
+      float: left;
+   }
+   
+   nav {
+      float: right;
+      padding-right: 5em;
+   }
+}
+
+/* Home-Hero */
+
+.home-hero {
+   background-color: darkgray;
+   background-size: cover;
+   background-position: center;
+   padding: 1em 0;
+   height: 250px;
+   color: currentColor;
+}
+
+@media (min-width: 55rem) {
+   .home-hero {
+      height: 30vh;
+      padding-top: 1vh;
+   }
+}
+
+/* Portfolio */
+
+.portfolio {
+   margin: 0em 0 0;
+   padding: 2em;
+}
+
+.port-item {
+   margin: 0;
+   position: relative;
+}
+
+.port-item img {
+   display:inline-block;
+}
+
+.port-desc {
+   position: absolute;
+   z-index: 100;
+   bottom: 0em;
+   left: 0;
+   right: 0;
+   color: white;
+   /* background: rgba(0,0,0,.6);*/
+   padding-bottom: 2em;
+   padding-top:.5em;
+}
+
+.port-desc p {
+   margin: 1em;
+}
+
+@media (min-width: 35rem){
+   .port-item {
+      width: 50%;
+      float: left;
+   }
+}
+
+@media (min-width: 55rem){
+   .port-item {
+      width: 33.333334%;
+      float: left;
+      overflow: hidden;
+   }
+}
+
+.port-desc {
+   transform: translateY(10%)
+}
+
+.port-item:hover .port-desc {
+   transform: translateY(0%);
+}
+
+/* CTA */
+
+.cta {
+   background-color: aqua;
+   padding: 3em 0;
+}
+
+/* Table */
+
+table {
+   opacity: 0.95;
+   width: 85%;
+}
+
+th {
+   background-color: aqua;
+}
+
+tr:nth-child(even) {
+   background: rgba(0,0,0,.2)
+}
+
+tr:nth-child(odd) {
+   background: white;
+}
+
+.heading {
+   background: grey;
+   color: white;
+}
+
+th, td {
+   text-align: center;
+   padding: 1em;
+}
+
+
+/* Footer */
+
+.main-container {
+ min-height: 54.5vh; /* will cover the 100% of viewport */
+ display: block;
+ position: relative; /* height of your footer */
+}
+
+footer {
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+ height: 145px;	
+ background: grey;
+}
